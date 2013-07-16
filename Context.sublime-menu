@@ -1,0 +1,12 @@
+[
+    {
+        "caption":"Caffeina",
+        "command": "",
+        "mnemonic": "CA",
+        "children":
+        [
+            {"command": "caffeina_add_signature", "caption": "Firma Documento"}
+        ]
+    }
+
+]
