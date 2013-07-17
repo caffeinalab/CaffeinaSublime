@@ -12,9 +12,9 @@ class CaffeinaAddSignatureCommand(sublime_plugin.TextCommand):
         self.date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         if sublime.score_selector(get_current_scope(), 'text.html'):
-            self.view.run_command("insert_snippet", {"contents": "<!--\n | Caffeina srl\n | @author {user}\n | @date {date}\n -->\n".format(user=self.user, date=self.date)})
+            self.view.run_command("insert_snippet", {"contents": "<!--\n| Caffeina srl\n| @author {user}\n| @date {date}\n-->\n".format(user=self.user, date=self.date)})
         else:
-            self.view.run_command("insert_snippet", {"contents": "/**\n * Caffeina srl\n * @author {user}\n * @date {date}\n */\n".format(user=self.user, date=self.date)})
+            self.view.run_command("insert_snippet", {"contents": "/**\n* Caffeina srl\n* @author {user}\n* @date {date}\n*/\n".format(user=self.user, date=self.date)})
 
 
 def get_current_scope():
